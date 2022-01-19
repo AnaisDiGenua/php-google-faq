@@ -71,6 +71,13 @@ $links = [
     'Domande frequenti'
 ];
 
+//array nav links footer
+$footerLinks = [
+    'Google',
+    'Tutto su Google',
+    'Privacy',
+    'Termini'
+]
 ?>
 
 
@@ -105,7 +112,7 @@ $links = [
         </div>
 
         <div class="header-bottom">
-            <nav>
+            <nav class="header-nav">
                 <?php foreach($links as $link) { ?>
                     <ul>
                         <li><a href="#"><?php echo $link?></a></li>
@@ -136,7 +143,28 @@ $links = [
 
 
     <!-- inizio footer -->
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <?php foreach($footerLinks as $link) { ?>
+                    <ul>
+                        <li><a href="#"><?php echo $link?></a></li>
+                    </ul>
+                <?php } ?>
+            </nav>
+            <div class="language-box">
+                <i class="fas fa-globe"></i>
+                <select>
+                    <option value="italiano">Italiano</option>
+                    <option value="deutsch">Deutsch</option>
+                    <option value="english">English</option>
+                    <option value="Espanol">Español</option>
+                    <option value="francais">Français</option>
+                    <option value="francais">Français</option>
+                </select>
+            </div>
+        </div>
+    </footer>
     <!-- /footer -->
 
 </body>
