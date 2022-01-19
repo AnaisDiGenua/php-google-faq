@@ -5,12 +5,27 @@
     box-sizing: border-box;
 }
 
+
 /* COMMONS */
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .container {
     width: 60%;
     margin: 0 auto;
 }
-
+h2, h3 {
+    color: #3c4043;
+}
+h2 {
+    padding-top: 64px;
+}
+h3 {
+    padding-top: 52px;
+}
+ul {
+    list-style: none;
+}
 
 
 
@@ -22,7 +37,19 @@ header {
 
 
 /* MAIN */
-
+main {
+    margin: 40px 0;
+}
+p, .p-style {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 20px;
+    color: rgba(0,0,0,0.87);
+}
+p a {
+    text-decoration: none;
+    color: #3367d6;
+}
 
 
 /* FOOTER */
