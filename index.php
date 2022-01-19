@@ -60,7 +60,16 @@ $faqs = [
         "answer" => "<p>In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di <a href='#'>URL referrer</a>. Talvolta, l'URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili <a href='#'>qui</a>. Le query di ricerca o le informazioni contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio.</p>
         "
     ]
-]
+];
+
+//array nav links 
+$links = [
+    'Introduzione',
+    'Norme sulla privacy',
+    'Termini di servizio',
+    'Tecnologie',
+    'Domande frequenti'
+];
 
 ?>
 
@@ -75,12 +84,36 @@ $faqs = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Google Faq</title>
 </head>
 <body>
     
     <!-- inizio header -->
-    <header></header>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="img/google.svg" alt="logo google">
+                <span>Privacy e condizioni</span>
+            </div>
+            <div class="account-box">
+                <i class="fas fa-ellipsis-v"></i>
+                <div class="account">
+                    <span>A</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <nav>
+                <?php foreach($links as $link) { ?>
+                    <ul>
+                        <li><a href="#"><?php echo $link?></a></li>
+                    </ul>
+                <?php } ?>
+            </nav>
+        </div>
+    </header>
     <!-- /header -->
 
 

@@ -31,8 +31,59 @@ ul {
 
 /* HEADER */
 header {
-    height: 100px;
-    background-color: lightblue; /*DEBUG*/
+    padding: 10px 20px;
+    border-bottom: 1px solid lightgray;
+}
+.header-top {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.logo {
+    height: 30px;
+    line-height: 30px;
+}
+.logo img {
+    vertical-align: middle;
+}
+.logo span {
+    font-size: 1.375rem;
+    color: #5f6368;
+    padding-left: 4px;
+    vertical-align: middle;
+}
+.account-box {
+    display: flex;
+    align-items: center;
+}
+.account-box i {
+    font-size: 1.25rem;
+    color: #5f6368;
+    margin-right: 15px;
+}
+.account-box .account {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #33691e;
+}
+.account span {
+    color: white;
+    vertical-align: middle;
+}
+nav ul {
+    display: inline-block;
+}
+nav li {
+    margin-right: 42px;
+}
+nav li a {
+    color: #5f6368;
+    text-decoration: none;
 }
 
 
@@ -40,7 +91,7 @@ header {
 main {
     margin: 40px 0;
 }
-p, .p-style {
+main p, .p-style {
     font-size: 14px;
     line-height: 24px;
     padding-top: 20px;
@@ -55,5 +106,5 @@ p a {
 /* FOOTER */
 footer {
     height: 50px;
-    background-color: lightgray; /*DEBUG*/
+    #f5f5f5
 }
